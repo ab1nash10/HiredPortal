@@ -66,6 +66,21 @@
     --color-5: 90 100% 63%;
   }
 }
+
+@layer utilities {
+  .gradient-dark {
+    @apply bg-gradient-to-br from-gray-500 via-gray-200  to-white;
+  }
+  .gradientTitleDark {
+    @apply gradient-dark text-transparent bg-clip-text;
+  }
+  .gradient-light {
+    @apply bg-gradient-to-br from-black via-gray-400 to-black;
+  }
+  .gradientTitleLight {
+    @apply gradient-light text-transparent bg-clip-text;
+  }
+}
 @layer base {
   * {
     @apply border-border;
